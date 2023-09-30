@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peirre - Feuille - Ciseaux</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="computer">
+        <div class="card-container">
+          <div class="card-wrapper">
+            <div class="card computer-cissors">
+              <div class="card-front cissors">
+                <img src="images/cissors.png" alt="" />
+              </div>
+
+              <div class="card-back">
+                <ion-icon name="help-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card-wrapper">
+            <div class="card computer-paper">
+              <div class="card-front paper">
+                <img src="images/paper.png" alt="" />
+              </div>
+
+              <div class="card-back">
+                <ion-icon name="help-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card-wrapper">
+            <div class="card computer-stone">
+              <div class="card-front stone">
+                <img src="images/stone.png" alt="" />
+              </div>
+
+              <div class="card-back">
+                <ion-icon name="help-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vs">VS</section>
+
+      <section class="computer">
+        <div class="card-container">
+          <div class="card-wrapper">
+            <div id="player-stone" class="card player-stone">
+              <div class="card-front stone">
+                <img src="images/stone.png" alt="" />
+              </div>
+
+              <div class="card-back"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card-wrapper">
+            <div class="card player-paper">
+              <div class="card-front paper">
+                <img src="images/paper.png" alt="" />
+              </div>
+
+              <div class="card-back"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card-wrapper">
+            <div class="card player-cissors">
+              <div class="card-front cissors">
+                <img src="images/cissors.png" alt="" />
+              </div>
+
+              <div class="card-back"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <div class="message">
+
+        <p class="result">Erreur</p>
+        <div class="replay">
+            <button type="submit" class="btn-replay"> 
+                <ion-icon name="logo-game-controller-a"></ion-icon> Rejouer
+            </button>
+          </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
