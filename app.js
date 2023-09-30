@@ -39,37 +39,41 @@ function reverseCard() {
     randomPlay() 
     computersArrays[computerRandomPlay].classList.add("card-flip");
 
-    if(i === 0 && playerPlay === 'stone') {
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Egalité';
-    } else if(i === 0 && playerPlay === 'paper') {
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Victoire';
-    } else if ( i === 0 && playerPlay === 'cissors'){
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Defaite';
-    } else if(i === 1 && playerPlay === 'stone') {
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Defaite';
-    } else if(i === 1 && playerPlay === 'paper') {
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Egalité';
-    } else if ( i === 1 && playerPlay === 'cissors'){
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Victoire';
-    } else if(i === 2 && playerPlay === 'stone') {
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Victoire';
-    } else if(i === 2 && playerPlay === 'paper') {
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Defaite';
-    } else if ( i === 2 && playerPlay === 'cissors'){
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Egalité';
-    } else {
-        resultMessage.style.display = 'flex';
-        result.innerText = 'Erreur';
-    }
+    computersArrays[computerRandomPlay].addEventListener("transitionend", function () {
+        if(i === 0 && playerPlay === 'stone') {
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Egalité';
+        } else if(i === 0 && playerPlay === 'paper') {
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Victoire';
+        } else if ( i === 0 && playerPlay === 'cissors'){
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Defaite';
+        } else if(i === 1 && playerPlay === 'stone') {
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Defaite';
+        } else if(i === 1 && playerPlay === 'paper') {
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Egalité';
+        } else if ( i === 1 && playerPlay === 'cissors'){
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Victoire';
+        } else if(i === 2 && playerPlay === 'stone') {
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Victoire';
+        } else if(i === 2 && playerPlay === 'paper') {
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Defaite';
+        } else if ( i === 2 && playerPlay === 'cissors'){
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Egalité';
+        } else {
+            resultMessage.style.display = 'flex';
+            result.innerText = 'Erreur';
+        }
+      });
+
+    
 }
 
 const playersBtn = [playerStone, playerPaper, playerCissors];
